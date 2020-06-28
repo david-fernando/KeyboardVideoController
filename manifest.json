@@ -1,0 +1,25 @@
+{
+    "name": "keyboardVideoController",
+    "version": "1.0.2",
+    "description": "Extensão que adiciona controles de vídeo pelo teclado",
+    "browser_action": {
+        "default_title": "Keyboard Video Controller",
+        "default_popup": "index.html",
+        "default_icon": "icon/icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "exclude_matches": [
+                "*://www.youtube.com/*",
+                "*://developer.chrome.com/*",
+                "*://*.google.com/*"
+            ],
+            "css": ["styles.css"],
+            "js": ["index.js"]
+        }
+    ],
+    "manifest_version": 2
+}
