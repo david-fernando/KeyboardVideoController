@@ -7,16 +7,16 @@ Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
 function controllVideo(){
     return{
         K: function playChange(video){
-            return video.playing == true? video.pause() : video.play()
+            return video.playing === true? video.pause() : video.play()
         },
         F: function fullscreenChange(video){
             return !document.fullscreenElement? video.requestFullscreen() : document.exitFullscreen()
         },
         J: function decrementTime(video){
-            return (video.playing == true) && (video.currentTime -= 10)
+            return (video.playing === true) && (video.currentTime -= 10)
         },
         L: function incrementTime(video){
-            return (video.playing == true) && (video.currentTime += 10)
+            return (video.playing === true) && (video.currentTime += 10)
         },
         0: function goToTheZeroMinute(video){
             return (!Number.isNaN(video.duration)) && (video.currentTime = 0)
