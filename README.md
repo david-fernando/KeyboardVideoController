@@ -2,6 +2,8 @@
 
 ---
 
-### About
+### Sobre
 Extensão para o Microsoft Edge que adiciona controles de vídeo pelo teclado
+
+### Capturas de tela
  
