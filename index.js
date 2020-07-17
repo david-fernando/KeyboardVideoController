@@ -1,5 +1,5 @@
 Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
-    get: function(){
+    get(){
         return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
     }
 })
@@ -33,7 +33,7 @@ function controllVideo(){
     }
 }
 
-document.addEventListener('keydown', event=>{
+document.addEventListener('keydown', (event) =>{
     const key = event.key.toUpperCase()
     const video = document.querySelector('video')
     const srcExists = video?.src
