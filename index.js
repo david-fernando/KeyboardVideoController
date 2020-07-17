@@ -33,7 +33,7 @@ function controllVideo(){
     }
 }
 
-document.addEventListener('keydown', (event) =>{
+document.addEventListener('keydown', (event) => {
     const key = event.key.toUpperCase()
     const video = document.querySelector('video')
     const srcExists = video?.src
