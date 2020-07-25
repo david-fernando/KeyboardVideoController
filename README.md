@@ -6,7 +6,7 @@
 Extensão para o Microsoft Edge que adiciona controles de vídeo pelo teclado
 
 ### Demonstração
-<video width="100"> <source src="mov_bbb.mp4" type="video/mp4">
+<video width="100"> <source src="https://i.imgur.com/qpS9Wzx.mp4" type="video/mp4"> </video>
 
 ### Download
 
