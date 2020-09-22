@@ -18,8 +18,14 @@
                 "*://*.google.com/*"
             ],
             "css": ["styles.css"],
-            "js": ["index.js"]
+            "js": ["content.js"]
         }
     ],
+    "permissions": ["storage"], 
+    "web_accessible_resources": [
+        "index.js",
+        "modules/controllVideo.js",
+        "modules/addPlayingObject.js"
+     ],
     "manifest_version": 2
 }
