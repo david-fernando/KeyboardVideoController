@@ -1,9 +1,9 @@
 import addPlayingObject from './addPlayingObject.js'
+import exitFullscreen from './exitFullscreen.js'
 
 addPlayingObject()
 
 const videoIsPlaying = video => (video.playing == true)
-const itsInFullScreen = (document.fullscreenElement)
 const videoIsVisible = video => (video.style.display !== "block")
 const isNumber = video => !(isNaN(video.duration))
 
@@ -13,7 +13,7 @@ function controllVideo(){
             return videoIsPlaying(video)? video.pause() : video.play()
         },
         F: function fullscreenChange(video){
-            return (!itsInFullScreen && videoIsVisible(video) && videoIsPlaying(video))? video.requestFullscreen() : document.exitFullscreen()
+            return (!document.fullscreenElement && videoIsPlaying(video))? video.requestFullscreen() : exitFullscreen()
         },
         J: function decrementTime(video){
             return (videoIsPlaying(video)) && (video.currentTime -= 10)
