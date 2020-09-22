@@ -4,7 +4,6 @@ import exitFullscreen from './exitFullscreen.js'
 addPlayingObject()
 
 const videoIsPlaying = video => (video.playing == true)
-const videoIsVisible = video => (video.style.display !== "block")
 const isNumber = video => !(isNaN(video.duration))
 
 function controllVideo(){
