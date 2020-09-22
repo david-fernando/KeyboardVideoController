@@ -5,7 +5,7 @@ document.addEventListener('keydown', event=>{
     const video = document.querySelector('video')
     const srcExists = video?.src
     const src = srcExists && video.src.split('.com/')[0]
-    const keyExists = controllVideo(document)?.[key]
+    const keyExists = controllVideo()?.[key]
     if(keyExists && srcExists && src != 'blob:https://www.youtube'){
         return controllVideo()[key](video)
     }
